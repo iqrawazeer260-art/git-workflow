@@ -1,8 +1,13 @@
-def login (username, password):
-   # simple authentication logic
-   if username == "admin" and password == "password:
-      return True
-   return False
+ef login(username, password):
+    # Simple authentication logic
+    if username == "admin" and password == "password":
+        return True
+    return False
 
 def logout():
-     return "user logged out"
+    return "User logged out"
+
+def validate_input(username, password):
+    if not username or not password:
+        return False
+    return True
